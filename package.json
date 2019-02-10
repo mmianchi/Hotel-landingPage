@@ -1,0 +1,22 @@
+{
+  "name": "hotel-langingpage",
+  "version": "1.0.0",
+  "description": "hotel landing page with flex and saa by mahshid mianchi",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmianchi/Hotel-landingPage.git"
+  },
+  "author": "Mahshid Mianchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmianchi/Hotel-landingPage/issues"
+  },
+  "homepage": "https://github.com/mmianchi/Hotel-landingPage#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
