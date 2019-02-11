@@ -1,3 +1,18 @@
+.sidebar, .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 html {
   font-size: 62.5%; }
 
@@ -14,20 +29,7 @@ body {
   width: 8rem;
   height: 100%;
   background-color: #eee;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  position: fixed; }
   .sidebar .menu-icon {
     margin-top: 3rem;
     cursor: pointer; }
@@ -74,4 +76,44 @@ body {
 
 .navigation {
   margin-left: 8rem;
-  position: fixed; }
+  position: fixed;
+  height: 100%;
+  width: 40rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(#222029), to(rgba(34, 32, 41, 0.8))), url(../../img/nav-bg.jpeg) center no-repeat;
+  background: linear-gradient(to top, #222029, rgba(34, 32, 41, 0.8)), url(../../img/nav-bg.jpeg) center no-repeat;
+  background-size: cover; }
+  .navigation-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: #deaa86;
+    text-align: center; }
+  .navigation-search {
+    position: relative; }
+    .navigation-search-input {
+      width: 30rem;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.6rem;
+      color: #deaa86;
+      letter-spacing: .1rem;
+      outline: none;
+      border: 0.1rem solid #555;
+      border-radius: 10rem;
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s; }
+      .navigation-search-input:focus {
+        background-color: rgba(0, 0, 0, 0.1); }
+    .navigation-search-btn {
+      border: none;
+      background-color: transparent;
+      color: #deaa86;
+      font-size: 1.7rem;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      cursor: pointer; }
+      .navigation-search-btn:focus {
+        outline: none; }

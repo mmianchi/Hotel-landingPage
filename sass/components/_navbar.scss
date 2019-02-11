@@ -5,20 +5,7 @@
   height: 100%;
   background-color: $color-grey;
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: space-between; 
-  -webkit-box-align: center; 
-      -ms-flex-align: center; 
-          align-items: center;               
-
+  @extend %nav;
 
   .menu-icon {
     margin-top: 3rem;
@@ -61,18 +48,71 @@
       color: #777;
       -webkit-transition: color .3s;
       transition: color .3s;
-      &:hover { color: #deaa86;}
+      &:hover {
+        color: $color-orange;
+      }
     }        
   }
   .year {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    color: #555;
+    color: $color-grey-dark;
     font-weight: 400;
   }
 }
+
 //nav
 .navigation {
   margin-left: 8rem;
   position: fixed;
+  height: 100%;
+  width: 40rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(34, 32, 41, 1)), to(rgba(34, 32, 41, .8))),
+  url(../../img/nav-bg.jpeg) center no-repeat;
+  background: linear-gradient(to top, rgba(34, 32, 41, 1), rgba(34, 32, 41, .8)),
+  url(../../img/nav-bg.jpeg) center no-repeat;
+  background-size: cover;
+  @extend %nav;    
+  &-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: $color-orange;
+    text-align: center;
+  }
+  &-search {
+    position: relative;
+    &-input {
+      width: 30rem;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, .3);
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.6rem;
+      color: $color-orange;
+      letter-spacing: .1rem;
+      outline: none;
+      border: .1rem solid $color-grey-dark;
+      border-radius: 10rem;
+      -webkit-transition: background-color .3s;
+      transition: background-color .3s;
+      
+      &:focus{
+        background-color: rgba(0,0,0,.1);
+      }
+    }
+    &-btn{
+     border: none;
+     background-color: transparent;
+     color: $color-orange;
+     font-size: 1.7rem;
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     cursor: pointer;
+     &:focus { outline: none; }
+    }
+  }
+
+
 }
