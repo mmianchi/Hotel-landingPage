@@ -71,3 +71,7 @@ body {
     font-size: 1.2rem;
     color: #555;
     font-weight: 400; }
+
+.navigation {
+  margin-left: 8rem;
+  position: fixed; }
