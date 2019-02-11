@@ -113,6 +113,39 @@
      &:focus { outline: none; }
     }
   }
-
-
+  &-list {
+    list-style: none;
+    padding:0;
+    height: 28rem;
+    @extend %nav;
+    .navigation-item {
+      position: relative;
+    }
+    .navigation-link{
+      text-decoration: none;
+      color: $color-white;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+      -webkit-transition: color .5s;
+      transition: color .5s;
+      &:hover {
+        color:$color-orange;
+        &:before,&:after{
+          width:3rem;
+        }
+      }
+      &:before {
+        @extend %navlink;
+        background-color: $color-orange;
+        left:-4rem;
+      }
+      &:after {
+        @extend %navlink;
+        background-color: $color-orange;
+        right: -4rem;
+      }
+    }
+  }
 }
