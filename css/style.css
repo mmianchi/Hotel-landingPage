@@ -1,17 +1,73 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit; }
-
 html {
   font-size: 62.5%; }
 
 body {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
+
+.sidebar {
+  width: 8rem;
+  height: 100%;
+  background-color: #eee;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .sidebar .menu-icon {
+    margin-top: 3rem;
+    cursor: pointer; }
+    .sidebar .menu-icon:hover .line {
+      width: 2.5rem; }
+    .sidebar .menu-icon .line {
+      height: .2rem;
+      width: 2.5rem;
+      background-color: #222;
+      margin-bottom: .6rem; }
+      .sidebar .menu-icon .line-1, .sidebar .menu-icon .line-3 {
+        width: 1.8rem;
+        -webkit-transition: width .3s;
+        transition: width .3s; }
+  .sidebar .social-icon-list {
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .sidebar .social-icon-list .social-link {
+      font-size: 2rem;
+      color: #777;
+      -webkit-transition: color .3s;
+      transition: color .3s; }
+      .sidebar .social-icon-list .social-link:hover {
+        color: #deaa86; }
+  .sidebar .year {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: 400; }
