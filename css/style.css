@@ -53,8 +53,10 @@ body {
       margin-bottom: .6rem; }
       .sidebar .menu-icon .line-1, .sidebar .menu-icon .line-3 {
         width: 1.8rem;
-        -webkit-transition: width .3s;
-        transition: width .3s; }
+        -webkit-transition: width .4s;
+        -webkit-transition: all .4s;
+        -webkit-transition: all .4s;
+        transition: all .4s; }
   .sidebar .social-icon-list {
     list-style: none;
     padding: 0;
@@ -160,3 +162,16 @@ body {
 
 .checkbox:checked ~ .navigation {
   left: 8rem; }
+
+.checkbox:checked ~ .sidebar .line-1 {
+  -webkit-transform: rotate(-405deg) translate(-5px, 6px);
+  transform: rotate(-405deg) translate(-5px, 6px);
+  width: 2.5rem; }
+
+.checkbox:checked ~ .sidebar .line-2 {
+  opacity: 0; }
+
+.checkbox:checked ~ .sidebar .line-3 {
+  -webkit-transform: rotate(405deg) translate(-5px, -6px);
+  transform: rotate(405deg) translate(-5px, -6px);
+  width: 2.5rem; }
