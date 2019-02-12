@@ -1,3 +1,15 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 .sidebar, .navigation, .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,26 +31,16 @@
   height: .1rem;
   position: absolute;
   top: 1rem;
-  -webkit-transition: width .5s;
-  transition: width .5s; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Montserrat', sans-serif; }
+  -webkit-transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+  transition: width 0.5s cubic-bezier(1, 0, 0, 1);
+  background-color: #deaa86; }
 
 .sidebar {
   width: 8rem;
   height: 100%;
   background-color: #eee;
-  position: fixed; }
+  position: fixed;
+  z-index: 10; }
   .sidebar .menu-icon {
     margin-top: 3rem;
     cursor: pointer; }
@@ -84,13 +86,15 @@ body {
     font-weight: 400; }
 
 .navigation {
-  margin-left: 8rem;
+  left: -32rem;
   position: fixed;
   height: 100%;
   width: 40rem;
   background: -webkit-gradient(linear, left bottom, left top, from(#222029), to(rgba(34, 32, 41, 0.8))), url(../../img/nav-bg.jpeg) center no-repeat;
   background: linear-gradient(to top, #222029, rgba(34, 32, 41, 0.8)), url(../../img/nav-bg.jpeg) center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  transition: left 0.8s cubic-bezier(1, 0, 0, 1); }
   .navigation-heading {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3.5rem;
@@ -146,8 +150,13 @@ body {
         .navigation-list .navigation-link:hover:before, .navigation-list .navigation-link:hover:after {
           width: 3rem; }
       .navigation-list .navigation-link:before {
-        background-color: #deaa86;
         left: -4rem; }
       .navigation-list .navigation-link:after {
-        background-color: #deaa86;
         right: -4rem; }
+  .navigation .copyright {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem; }
+
+.checkbox:checked ~ .navigation {
+  left: 8rem; }
