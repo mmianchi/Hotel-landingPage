@@ -50,25 +50,33 @@
     text-transform: capitalize;
     color: $color-orange-dark;
   }
+
   &-paragraph{
-    
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5rem;
   }
+
   &-btn {
-    width: 21rem;
-    padding: 2rem 3rem;
-    color: $color-orange;
+    width: 15rem;
+    padding: .7rem .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: $color-orange-dark;
     background-color: transparent;
     text-transform: uppercase;
-    border: 1px solid $color-orange;
-    -webkit-transition: margin-left .8s;
-    transition: margin-left .8s;
-    &:hover {
-      .fa-angle-double-right {
-        margin-left: 2rem;}
+    border: .1rem solid $color-orange-dark;
+    outline: none;
+    cursor: pointer;
+    &:hover .btn-arrow {
+      margin-left: 1.5rem;
     }
-    .fa-angle-double-right {
-      margin-left: .7rem;
-   
+    .btn-arrow {
+      margin-left: .5rem;
+      -webkit-transition: margin-left .8s;
+      transition: margin-left .8s;
     }
   }
 
