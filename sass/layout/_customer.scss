@@ -1,50 +1,51 @@
 .customers {
   margin-left: 8rem;
+  -webkit-padding-after: 8rem;
+          padding-block-end: 8rem;
   background-color: $color-black;
+
   .customer-paragraph{
     width: 60rem;
     color: #ddd;
-    margin:auto;
+    margin: 2rem auto 8rem auto;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 5rem;
+    font-size: 1.8rem;
   }
-  .card-wrapper{
+
+  .customers-card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;        
-    .customer-card {
-      background-color: $color-white;
-      display:-webkit-box;
-      display:-ms-flexbox;
-      display:flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 
-      .customer-imag-wrapper{
-        .customer-image {
-          width:20rem;
-        }
+    .customer {
+      &-card {
+        background-color: #eee;
+        width:60rem;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+      }  
+      &-image-wrapper {
+        margin: auto 0;
       }
-      .customer {
-        &-fullname {
-          font-size: 2rem;
-          font-weight: 300;
-        }
-        &-paragraph-1 {
-          color: $color-orange-dark;
-          font-size: 1.3rem;
-        }
-        &-paragraph-2 {
-          font-size: 1.3rem;
-        }
+      &-image { width:20rem; margin-left:-1.3rem; }
+      &-info { padding: 0 2rem; }
+      &-fullname {
+        font-size: 2rem; font-weight: 300; margin-bottom: 0;
       }
-
-    }
+      &-paragraph-1 {
+        color: $color-orange-dark;
+        font-size: 1.2rem;
+        font-style: italic;
+      }
+      &-paragraph-2 {
+        font-size: 1.3rem;
+        font-style: italic;
+      }
+    } 
   }
 }
 
