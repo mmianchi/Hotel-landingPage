@@ -33,23 +33,6 @@
     font-weight: 300;
     color: $color-grey-dark;
   }
-  .small-underline,
-  .big-underline {
-    height: .1rem;
-    background-color: $color-orange-dark;
-  }
-  .small-underline {
-    width: 9rem;
-    margin: 0 auto 1rem auto;
-  }
-  .big-underline { width: 20rem; }
-  .sub-heading{
-    font-size: 3.5rem;
-    font-weight: 300;
-    letter-spacing: .2rem;
-    text-transform: capitalize;
-    color: $color-orange-dark;
-  }
 
   &-paragraph{
     font-size: 1.6rem;
@@ -72,11 +55,6 @@
     cursor: pointer;
     &:hover .btn-arrow {
       margin-left: 1.5rem;
-    }
-    .btn-arrow {
-      margin-left: .5rem;
-      -webkit-transition: margin-left .8s;
-      transition: margin-left .8s;
     }
   }
 
