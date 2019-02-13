@@ -257,3 +257,69 @@ body {
   -webkit-transform: rotate(405deg) translate(-5px, -6px);
   transform: rotate(405deg) translate(-5px, -6px);
   width: 2.5rem; }
+
+.about-us {
+  margin-left: 8rem;
+  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex; }
+  .about-us-content {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .about-us-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 300;
+    color: #555; }
+  .about-us .small-underline,
+  .about-us .big-underline {
+    height: .1rem;
+    background-color: #b85d1c; }
+  .about-us .small-underline {
+    width: 9rem;
+    margin: 0 auto 1rem auto; }
+  .about-us .big-underline {
+    width: 20rem; }
+  .about-us .sub-heading {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    color: #b85d1c; }
+  .about-us-btn {
+    width: 21rem;
+    padding: 2rem 3rem;
+    color: #deaa86;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: 1px solid #deaa86;
+    -webkit-transition: margin-left .8s;
+    transition: margin-left .8s; }
+    .about-us-btn:hover .fa-angle-double-right {
+      margin-left: 2rem; }
+    .about-us-btn .fa-angle-double-right {
+      margin-left: .7rem; }
+  .about-us-images {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1; }
