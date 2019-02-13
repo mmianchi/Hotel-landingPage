@@ -453,6 +453,9 @@ body {
       font-size: 1.3rem;
       font-style: italic; }
 
+.footer {
+  margin-left: 8rem; }
+
 .common-header {
   padding: 5rem;
   text-align: center;
