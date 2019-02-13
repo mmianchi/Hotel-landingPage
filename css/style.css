@@ -410,6 +410,42 @@ body {
       -webkit-transform: translate(-30%, -30%);
       transform: translate(-30%, -30%); }
 
+.customers {
+  margin-left: 8rem;
+  background-color: #15141b; }
+  .customers .customer-paragraph {
+    width: 60rem;
+    color: #ddd;
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem; }
+  .customers .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .customers .card-wrapper .customer-card {
+      background-color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .customers .card-wrapper .customer-card .customer-imag-wrapper .customer-image {
+        width: 20rem; }
+      .customers .card-wrapper .customer-card .customer-fullname {
+        font-size: 2rem;
+        font-weight: 300; }
+      .customers .card-wrapper .customer-card .customer-paragraph-1 {
+        color: #b85d1c;
+        font-size: 1.3rem; }
+      .customers .card-wrapper .customer-card .customer-paragraph-2 {
+        font-size: 1.3rem; }
+
 .common-header {
   padding: 5rem;
   text-align: center;

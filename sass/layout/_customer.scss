@@ -1,0 +1,50 @@
+.customers {
+  margin-left: 8rem;
+  background-color: $color-black;
+  .customer-paragraph{
+    width: 60rem;
+    color: #ddd;
+    margin:auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+  }
+  .card-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;        
+    .customer-card {
+      background-color: $color-white;
+      display:-webkit-box;
+      display:-ms-flexbox;
+      display:flex;
+
+      .customer-imag-wrapper{
+        .customer-image {
+          width:20rem;
+        }
+      }
+      .customer {
+        &-fullname {
+          font-size: 2rem;
+          font-weight: 300;
+        }
+        &-paragraph-1 {
+          color: $color-orange-dark;
+          font-size: 1.3rem;
+        }
+        &-paragraph-2 {
+          font-size: 1.3rem;
+        }
+      }
+
+    }
+  }
+}
+
