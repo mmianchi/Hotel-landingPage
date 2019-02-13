@@ -22,39 +22,12 @@ body {
 body {
   font-family: 'Montserrat', sans-serif; }
 
-.common-header {
-  padding: 5rem;
-  text-align: center;
-  color: #b85d1c; }
-  .common-header .common-heading {
-    font-size: 4rem;
-    font-weight: 300;
-    letter-spacing: .2rem; }
-
-.small-underline,
-.big-underline {
-  height: .1rem;
-  background-color: #b85d1c; }
-
-.small-underline {
-  width: 9rem;
-  margin: 0 auto 1rem auto; }
-
-.big-underline {
-  width: 20rem;
-  margin: auto; }
-
 .sub-heading {
   font-size: 3.5rem;
   font-weight: 300;
   letter-spacing: .2rem;
   text-transform: capitalize;
   color: #b85d1c; }
-
-.btn-arrow {
-  margin-left: .5rem;
-  -webkit-transition: margin-left .8s;
-  transition: margin-left .8s; }
 
 .rooms {
   margin-left: 8rem; }
@@ -436,3 +409,30 @@ body {
     .about-us-images .image-4 {
       -webkit-transform: translate(-30%, -30%);
       transform: translate(-30%, -30%); }
+
+.common-header {
+  padding: 5rem;
+  text-align: center;
+  color: #b85d1c; }
+  .common-header .common-heading {
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem; }
+
+.small-underline,
+.big-underline {
+  height: .1rem;
+  background-color: #b85d1c; }
+
+.small-underline {
+  width: 9rem;
+  margin: 0 auto 1rem auto; }
+
+.big-underline {
+  width: 20rem;
+  margin: auto; }
+
+.btn-arrow {
+  margin-left: .5rem;
+  -webkit-transition: margin-left .8s;
+  transition: margin-left .8s; }
